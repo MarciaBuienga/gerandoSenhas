@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    background-color: #1f2232;
+}
+
+#container{
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #7a94ae;
+    border-radius: 10px;
+}
+
+input{
+    outline: none;
+    accent-color: goldenrod;
+    border-color: goldenrod;
+}
+
+img{
+    margin-top: 25px;
+}
+
+label{
+    font-size: 19px;
+}
+
+#titulo{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#password_container{
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-left: 10px;
+    color: #000;
+    border-radius: 8px;
+    padding: 7px 18px;
+}
+
+#password_container.show{
+    display: flex;
+}
+
+#password{
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#copy{
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fa-solid, .fa-copy{
+    color: goldenrod;
+}
+
+button{
+    color: #fff;
+}
+
+#password_itens{
+    width: 400px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 18px;
+}
+
+#item{
+    display: flex;
+    gap: 14px;
+}
+
+#size{
+    width: 200px;
+    text-align: center;
+    border-radius:4px;
+    border: none;
+}
+
+#size::-webkit-inner-spin-button,
+#size::-webkit-outer-spin-button{
+    opacity: 1;
+}
+
+#size:focus { /* cor da borda quando o cursor for pressionado**/
+    outline: 1px solid #f5c525;
+}
+
+#gerar_senha {
+    background-color: #f5c525;
+    border: none;
+    margin-top: 12px;
+    padding: 10px 0px;
+    border-radius: 4px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#gerar_senha:hover{
+    opacity: 0.8;
+}
